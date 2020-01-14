@@ -175,11 +175,12 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds()
-  big_shoe_man = {"new_shoe" => 0}
+  big_shoe_man = {new_shoe: 0, new_rebound: 0}
   game_hash.each_key do |key|
     game_hash[key][:players].each do |i|
-      if i[:shoe] > big_shoe_man["new_shoe"]
-        big_shoe_man = i
+      if i[:shoe] > big_shoe_man[:new_shoe]
+        big_shoe_man[:new_shoe] = i[:shoe]
+        big_shoe_man[:new_rebound] = i[:rebounds]
       end
     end
   end

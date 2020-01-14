@@ -203,7 +203,7 @@ def most_points_scored()
 end
 
 def winning_team()
-  scores_by_name = {}
+  scores_by_name = {{}}
   game_hash.each_key do |key|
     scores_by_name[key][:team_name] = 0
     game_hash[key][:players].each do |i|

@@ -236,7 +236,7 @@ def long_name_steals_a_ton?()
   game_hash.each do |key, value|
     # value[:players].each do |i|
     #   i[:steals > namus_longus.length ? namus_longus = i[:player_name] : nil
-    end
+    # end
   end
   pp stats_of_longname
 end

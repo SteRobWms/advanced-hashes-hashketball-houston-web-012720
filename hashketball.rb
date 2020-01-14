@@ -162,6 +162,15 @@ end
 # player_numbers("Brooklyn Nets")
 
 def player_stats(player_name)
+  stats = {(player_name): {}}
+  game_hash.each_key do |key|
+    game_hash[key][:players].each do |i|
+      if i[:player_name] == (player_name)
+        i.each do {|k, l| stats[:player_name][k] = l
+        end
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds()

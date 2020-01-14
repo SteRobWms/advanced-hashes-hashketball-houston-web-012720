@@ -112,10 +112,12 @@ end
 
 # team_players(:away)
 
-def num_points_scored
+def num_points_scored(player_name)
   game_hash.each_key do |key|
     game_hash[key][:players].each do |i|
-      puts i[:number]
+      if i include? (player_name)
+        puts i[:number]
+      end
     end
     # team_players(team).each do |i|
     #   # return team_players(team)[i][:player_name].include? player_name

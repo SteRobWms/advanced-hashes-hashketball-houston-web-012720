@@ -214,6 +214,8 @@ def winning_team()
   p scores_by_name
 end
 
+winning_team
+
 def player_with_longest_name()
 end
 

@@ -238,12 +238,12 @@ def long_name_steals_a_ton?()
   game_hash.each do |key, value|
     value[:players].each do |i|
       if i[:steals] < ln_stats[:steals] || i[:player_name] == ln_stats[:player_name]
-        true
       else
         return false
       end
     end
   end
+  true
   # pp stats_of_longname
 end
 

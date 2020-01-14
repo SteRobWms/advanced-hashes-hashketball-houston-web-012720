@@ -227,7 +227,7 @@ def player_with_longest_name()
       i[:player_name].length > namus_longus.length ? namus_longus = i[:player_name] : nil
     end
   end
-  p namus_longus
+  namus_longus
 end
 player_with_longest_name
 

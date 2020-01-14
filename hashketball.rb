@@ -205,12 +205,13 @@ end
 def winning_team()
   scores_by_name = {}
   game_hash.each do |key, value|
-    scores_by_name[value[:team_name]] = 0
+    scores_by_name[key[:team_name]] = value[:team_name]
+    scores_by_name[key[:score]] = 0
     game_hash[key][:players].each do |i|
-      scores_by_name[value[:team_name]] += i[:points]
+      scores_by_name[key[:score]] += i[:points]
     end
   end
-  puts scores_by_name
+  scores_by_name.each {|k,v| }
 end
 
 winning_team

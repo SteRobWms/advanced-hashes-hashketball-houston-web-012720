@@ -190,6 +190,16 @@ end
 # big_shoe_rebounds
 
 def most_points_scored()
+  superstar = {new_name: "", new_points: 0}
+  game_hash.each_key do |key|
+    game_hash[key][:players].each do |i|
+      if i[:points] > superstar[:new_points]
+        superstar[:new_name] = i[:player_name]
+        superstar[:new_points] = i[:points]
+      end
+    end
+  end
+  big_shoe_man[:new_rebound]
 end
 
 def winning_team()

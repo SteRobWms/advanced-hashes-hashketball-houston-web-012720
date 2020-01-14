@@ -226,7 +226,6 @@ def player_with_longest_name()
     key[:players].each do |i|
       i[:player_name].length > namus_longus.length? namus_longus = i[:player_name] : nil
     end
-  end
   p namus_longus
 end
 

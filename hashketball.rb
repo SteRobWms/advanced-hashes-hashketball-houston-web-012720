@@ -184,10 +184,10 @@ def big_shoe_rebounds()
       end
     end
   end
-  p big_shoe_man[:new_rebound]
+  big_shoe_man[:new_rebound]
 end
 
-big_shoe_rebounds
+# big_shoe_rebounds
 
 def most_points_scored()
 end

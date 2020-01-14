@@ -119,14 +119,9 @@ def num_points_scored(player_name)
         p i[:number]
       end
     end
-    # team_players(team).each do |i|
-    #   # return team_players(team)[i][:player_name].include? player_name
-    #   pp team_players(team)[i][:player_name]
-    #     # return team_players[i][:points]
-    # end
   end
 end
-num_points_scored("Alan Anderson")
+# num_points_scored("Alan Anderson")
 
 def shoe_size(player_name)
 end

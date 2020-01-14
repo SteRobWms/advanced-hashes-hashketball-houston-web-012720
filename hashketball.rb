@@ -241,6 +241,7 @@ def long_name_steals_a_ton?()
         true
       else
         return false
+      end
     end
   end
   pp stats_of_longname

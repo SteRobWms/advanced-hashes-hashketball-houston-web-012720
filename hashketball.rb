@@ -239,6 +239,7 @@ def long_name_steals_a_ton?()
     # end
   end
   stats_of_longname[:player_name] = player_with_longest_name
+  pp stats_of_longname
 end
 
 long_name_steals_a_ton?

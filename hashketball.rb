@@ -156,7 +156,7 @@ def player_numbers(team_name)
       end
     end
   end
-  player_set_numbers
+  # player_set_numbers
 end
 player_numbers("Brooklyn Nets")
 def player_stats(player_name)

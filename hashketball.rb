@@ -229,6 +229,7 @@ def player_with_longest_name()
   end
   p namus_longus
 end
+player_with_longest_name
 
 def long_name_steals_a_ton?()
 end

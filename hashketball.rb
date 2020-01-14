@@ -238,7 +238,7 @@ def long_name_steals_a_ton?()
     #   i[:steals > namus_longus.length ? namus_longus = i[:player_name] : nil
     # end
   end
-  pp stats_of_longname
+  stats_of_longname[:player_name] = player_with_longest_name
 end
 
 long_name_steals_a_ton?

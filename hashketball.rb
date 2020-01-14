@@ -232,12 +232,16 @@ end
 # player_with_longest_name
 
 def long_name_steals_a_ton?()
-  stats_of_longname = player_stats(player_with_longest_name)
-  stats_of_longname[:player_name] = player_with_longest_name
+  ln_stats = player_stats(player_with_longest_name)
+  ln_stats[:player_name] = player_with_longest_name
+  is_longest_sneakiest = nil
   game_hash.each do |key, value|
-    # value[:players].each do |i|
-    #   i[:steals > namus_longus.length ? namus_longus = i[:player_name] : nil
-    # end
+    value[:players].each do |i|
+      if i[:steals] < ln_stats[:steals] || i[:player_name] == ln_stats[:player_name]
+        true
+      else
+        return false
+    end
   end
   pp stats_of_longname
 end

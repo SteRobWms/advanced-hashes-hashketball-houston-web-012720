@@ -115,7 +115,7 @@ end
 def num_points_scored(player_name)
   game_hash.each_key do |key|
     game_hash[key][:players].each do |i|
-      if i.include? (player_name)
+      if i[:player_name] == (player_name)
         p i[:number]
       end
     end

@@ -114,7 +114,8 @@ end
 
 def num_points_scored
   game_hash.each_key do |key|
-    pp game_hash[key][:players][:number]
+    game_hash[key][:players].each do |i|
+      puts [:number]
     # team_players(team).each do |i|
     #   # return team_players(team)[i][:player_name].include? player_name
     #   pp team_players(team)[i][:player_name]

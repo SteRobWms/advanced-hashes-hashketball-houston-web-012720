@@ -204,13 +204,20 @@ end
 
 def winning_team()
   scores_by_name = {}
+  high_score_team = {high_name: "The Goose Eggs", high_score: 0}
   game_hash.each do |key, value|
     scores_by_name[value[:team_name]] = 0
     game_hash[key][:players].each do |i|
       scores_by_name[value[:team_name]] += i[:points]
     end
   end
-  puts scores_by_name
+  scores_by_name.each do |key, value|
+    if value > high_score_team[high_score]
+      high_score_team[high_name] = key
+      high_score_team[high_score] = value
+    end
+  end
+  high_score_team[high_score]
 end
 
 winning_team

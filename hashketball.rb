@@ -164,11 +164,11 @@ end
 def player_stats(player_name)
   stats = {player_name => {}}
   game_hash.each_key do |key|
-    game_hash[key][:players].each do |i|
-      if i[:player_name] == player_name
-        i.each{|k, l| stats[:player_name][k] = l}
-      end
-    end
+    # game_hash[key][:players].each do |i|
+    #   if i[:player_name] == player_name
+    #     i.each{|k, l| stats[:player_name][k] = l}
+    #   end
+    # end
   end
   stats
 end

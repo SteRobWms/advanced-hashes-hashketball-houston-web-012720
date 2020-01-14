@@ -121,7 +121,7 @@ def num_points_scored(player_name)
     end
   end
 end
-# num_points_scored("Jeff Adrien")
+num_points_scored("Jeff Adrien")
 
 def shoe_size(player_name)
 end

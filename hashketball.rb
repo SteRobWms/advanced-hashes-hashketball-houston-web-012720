@@ -112,7 +112,7 @@ end
 
 # team_players(:away)
 
-def num_points_scored(player_name)
+def num_points_scored
   game_hash.each_key do |team|
     print team
     # team_players(team).each do |i|
@@ -122,7 +122,7 @@ def num_points_scored(player_name)
     # end
   end
 end
-num_points_scored("Jeff Adrien")
+num_points_scored
 
 def shoe_size(player_name)
 end

@@ -244,7 +244,7 @@ def long_name_steals_a_ton?()
       end
     end
   end
-  pp stats_of_longname
+  # pp stats_of_longname
 end
 
 long_name_steals_a_ton?

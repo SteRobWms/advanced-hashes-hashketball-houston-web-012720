@@ -110,7 +110,7 @@ def num_points_scored(player_name)
   puts game_hash[:away][:players][0][:points]
   puts game_hash[:away][:players][0][:player_name]
 end
-
+num_points_scored("Jeff Adrien")
 def shoe_size(player_name)
 end
 

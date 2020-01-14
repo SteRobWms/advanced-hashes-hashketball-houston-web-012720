@@ -170,7 +170,7 @@ def player_stats(player_name)
     #   end
     # end
   end
-  stats
+  p stats
 end
 
 player_stats("Alan Anderson")

@@ -173,6 +173,8 @@ def player_stats(player_name)
   stats
 end
 
+player_stats("Alan Anderson")
+
 def big_shoe_rebounds()
 end
 

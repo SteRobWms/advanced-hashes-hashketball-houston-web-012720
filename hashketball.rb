@@ -220,7 +220,7 @@ def winning_team()
   high_score_team[:high_name]
 end
 
-winning_team
+# winning_team
 
 def player_with_longest_name()
 end

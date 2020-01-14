@@ -124,6 +124,13 @@ end
 # num_points_scored("Alan Anderson")
 
 def shoe_size(player_name)
+  game_hash.each_key do |key|
+    game_hash[key][:players].each do |i|
+      if i[:player_name] == (player_name)
+        return i[:shoe_size]
+      end
+    end
+  end
 end
 
 def team_colors(team_name)

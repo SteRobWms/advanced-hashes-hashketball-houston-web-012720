@@ -224,7 +224,7 @@ def player_with_longest_name()
   namus_longus = " "
   game_hash.each do |key, value|
     value[:players].each do |i|
-      print i[:player_name].length #> namus_longus.length ? namus_longus = i[:player_name] : nil
+      p i[:player_name].length #> namus_longus.length ? namus_longus = i[:player_name] : nil
     end
   end
   p namus_longus

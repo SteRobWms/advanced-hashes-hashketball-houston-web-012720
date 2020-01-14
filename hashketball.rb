@@ -217,7 +217,7 @@ def winning_team()
       high_score_team[:high_score] = value
     end
   end
-  p high_score_team[:high_score]
+  p high_score_team[:high_name]
 end
 
 winning_team

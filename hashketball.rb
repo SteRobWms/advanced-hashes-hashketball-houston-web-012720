@@ -212,12 +212,12 @@ def winning_team()
     end
   end
   scores_by_name.each do |key, value|
-    if value > high_score_team[high_score]
-      high_score_team[high_name] = key
-      high_score_team[high_score] = value
+    if value > high_score_team[:high_score]
+      high_score_team[:high_name] = key
+      high_score_team[:high_score] = value
     end
   end
-  p high_score_team[high_score]
+  p high_score_team[:high_score]
 end
 
 winning_team

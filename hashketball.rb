@@ -113,8 +113,8 @@ end
 # team_players(:away)
 
 def num_points_scored
-  game_hash.each_key do |team|
-    p team_players[:team]
+  game_hash.each_key do |key|
+    p team_players(key)[key]
     # team_players(team).each do |i|
     #   # return team_players(team)[i][:player_name].include? player_name
     #   pp team_players(team)[i][:player_name]

@@ -210,6 +210,7 @@ def winning_team()
       scores_by_name[value[:team_name]] += i[:points]
     end
   end
+  puts scores_by_name
 end
 
 winning_team

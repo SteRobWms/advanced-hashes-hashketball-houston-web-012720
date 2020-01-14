@@ -178,7 +178,7 @@ def big_shoe_rebounds()
   big_shoe_man = {"new_shoe" => 0}
   game_hash.each_key do |key|
     game_hash[key][:players].each do |i|
-      if i[:shoe] > big_shoe_man[new_shoe]
+      if i[:shoe] > big_shoe_man["new_shoe"]
         big_shoe_man = i
       end
     end

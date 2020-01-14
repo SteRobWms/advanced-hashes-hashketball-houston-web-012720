@@ -148,6 +148,14 @@ def team_names()
 end
 
 def player_numbers(team_name)
+  player_set_numbers = []
+  game_hash.each_key do |key|
+    if game_hash[key][:team_name] == team_name
+      game_hash[key][:players].each do |i|
+      player_set_numbers.push(game_hash[key][:players][i][:number]
+    end
+  end
+  player_set_numbers
 end
 
 def player_stats(player_name)

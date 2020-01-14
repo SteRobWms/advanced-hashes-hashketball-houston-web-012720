@@ -184,7 +184,7 @@ def big_shoe_rebounds()
       end
     end
   end
-  p big_shoe_man[:rebounds]
+  p big_shoe_man[:new_rebound]
 end
 
 big_shoe_rebounds

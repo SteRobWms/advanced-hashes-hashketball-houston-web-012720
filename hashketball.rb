@@ -174,9 +174,16 @@ def player_stats(player_name)
   stats
 end
 
-player_stats("Alan Anderson")
-
 def big_shoe_rebounds()
+  big_shoe_man = {"new_shoe" => 0}
+  game_hash.each_key do |key|
+    game_hash[key][:players].each do |i|
+      if i[:shoe] > big_shoe_man["new_shoe"]
+        big_shoe_man = i
+      end
+    end
+  end
+  big_shoe_man[:rebounds]
 end
 
 def most_points_scored()

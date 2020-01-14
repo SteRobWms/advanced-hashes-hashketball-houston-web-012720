@@ -213,7 +213,7 @@ def winning_team()
       scores_by_name[key[:new_score]] += i[:points]
     end
   end
-  scores_by_name.each {|k,v| }
+  # scores_by_name.each {|k,v| }
 end
 
 winning_team

@@ -199,7 +199,7 @@ def most_points_scored()
       end
     end
   end
-  big_shoe_man[:new_rebound]
+  superstar[:new_name]
 end
 
 def winning_team()

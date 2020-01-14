@@ -139,6 +139,7 @@ end
 def team_names()
   teams = []
   game_hash.each_key {|keys| teams.push(game_hash[keys][:team_name])}
+  teams
 end
 
 def player_numbers(team_name)

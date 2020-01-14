@@ -220,9 +220,14 @@ def winning_team()
   high_score_team[:high_name]
 end
 
-# winning_team
-
 def player_with_longest_name()
+  namus_longus = ""
+  game_hash.each_key do |key|
+    key[:players].each do |i|
+      i[:player_name].length > namus_longus.length? namus_longus = i[:player_name] :
+    end
+  end
+  namus_longus
 end
 
 def long_name_steals_a_ton?()

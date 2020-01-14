@@ -110,7 +110,7 @@ def team_players(team)
   pp game_hash[team][:players]
 end
 
-team_players(:away)
+# team_players(:away)
 
 def num_points_scored(player_name)
   game_hash.each_key do |teams|

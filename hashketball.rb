@@ -113,7 +113,13 @@ end
 team_players(:away)
 
 def num_points_scored(player_name)
-  
+  game_hash.each_key do |teams|
+    team_players.each do |i|
+      if team_players[i][:player_name].include? player_name
+        return team_players[i][:points]
+      end
+    end
+  end
 end
 # num_points_scored("Jeff Adrien")
 

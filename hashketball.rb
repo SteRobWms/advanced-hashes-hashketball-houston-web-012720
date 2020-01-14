@@ -217,7 +217,7 @@ def winning_team()
       high_score_team[high_score] = value
     end
   end
-  high_score_team[high_score]
+  p high_score_team[high_score]
 end
 
 winning_team

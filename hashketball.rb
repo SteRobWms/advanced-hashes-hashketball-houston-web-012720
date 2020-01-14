@@ -137,7 +137,8 @@ def team_colors(team_name)
 end
 
 def team_names()
-  game_hash.each_key {|keys| game_hash[keys][:team_name]}
+  teams = []
+  game_hash.each_key {|keys| teams.push(game_hash[keys][:team_name])}
 end
 
 def player_numbers(team_name)
